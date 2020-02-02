@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heart</title>
+	<style type="text/css">
+
+		.container{
+			max-width: 1170px;
+			margin:0 auto;
+			padding:0px 20px;
+		}
+		.heart-wrap{
+			padding:100px 0px;
+			border:1px solid red;
+			border-radius:10px;
+		}
+
+		.heart{
+			background:red;
+			width:100px;
+			height:100px;
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			margin:0 auto;
+			transform: rotate(-45deg);
+			position:relative;
+		}
+		.heart::after{
+			content: '';
+			background:red;
+			width:100px;
+			height:100px;
+			border-radius:50%;
+			position:absolute;
+			top:0;
+			left:50px;
+		}		
+		.heart::before{
+			content: '';			
+			background:red;
+			width:100px;
+			height:100px;
+			border-radius:50%;
+			position:absolute;
+			top:-50px;
+			left:0px;
+		}	
+		h3{
+			color:red;
+			font-size:30px;
+			padding:30px 0px;
+			text-align:center;
+		}	
+		
+		p{color:#000;font-size:20px;text-align:center;}
+		a{color:#000;transition:all ease 0.3s;text-decoration:none;text-transform:uppercase;}
+		a:hover{color:red;}		
+
+	</style>
+</head>
+<body>
+	<section class="heart-wrap">
+		<div class="container">
+			<div class="heart">
+		
+			</div>
+			<h3>HAPPY VALENTINE'S DAY</h3>
+			<p>Hey there how we doin! :)) </p>
+			<p>This is MAHENDRA.Follow me on Instagram : <a href="https://www.instagram.com/mmahendra001/" target="_blank">here</a>.</p>
+		</div>
+	</section>
+</body>
+</html>
